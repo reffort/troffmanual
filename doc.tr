@@ -122,7 +122,7 @@
 .flig BI 31
 ..
 .\" mo/dy/yr
-.ds Sccsdate 12/17/18\"/02/10/16
+.ds Sccsdate 01/27/19
 .ds Str \*[Sccsdate]
 .substring Str 0 0
 .if '\*[Str]'%' \{\
@@ -5158,7 +5158,7 @@ makes the global number register \fIxx\fR, if any, completely inaccessible.
 The sequences
 \fB\en(\fIxx\fR and \fB\en[\fIxx\fB]\fR
 retrieve the value of the local register,
-\fB\eR\fI'xx\|...'\fR,
+\fB\eR\'\fIxx\|...\fP\'\fR,
 \fB\en+(\fIxx\fR and \fB\en+[\fIxx\fB]\fR (and likewise) modify it,
 and \fB\eg(\fIxx\fR and \fB\eg[\fIxx\fB]\fR retrieve its format.
 Subsequent calls to \fBnr\fR, \fBnrf\fR, \fBaf\fR,
@@ -7190,8 +7190,8 @@ When generating PDF files,
 it is especially important to set the paper format
 using the \T'mediasize'\fBmediasize\fR\T request \T's_page'(\(sc3)\T.
 This is because calculations in \*[PDF] documents
-are generally performed in relation regard to the page bottom,
-while \*(TR performs its calculations in relation to the page top.
+are generally performed relative to the page bottom,
+while \*(TR performs its calculations relative to the page top.
 Failing to set the paper format correctly
 will thus usually result in vertical displacements
 of \*[PDF]-specific elements.
