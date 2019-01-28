@@ -1,0 +1,9 @@
+doc.tr is the updated source file for the nroff/troff User's Manual,
+with the new paragraphing features and various corrections.
+
+troffdoc.pdf was built directly from the source file.
+
+troffdoc-mk.pdf is marked up to identify the lines that were changed
+in troffdoc.pdf.
+
+changes.pdf provides a detailed description of the changes.
