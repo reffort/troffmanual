@@ -2148,90 +2148,90 @@ Section	Escape
 Reference	Sequence	Meaning
 .ft R
 .xx
-\T'e_esc'10.1\T	\T'e_esc'\fB\e\e\fR\T	\T'e_esc'\e (to prevent or delay the interpretation of \e\|)\T
+10.1	\T'e_esc'\fB\e\e\fR\T	\e (to prevent or delay the interpretation of \e\|)
 2.1	\T'e_acute'\fB\e\(aq\fR\T	\' (acute accent); equivalent to \fB\e(aa\fR
-\T'e_grave'2.1\T	\T'e_grave'\fB\e\`\fR\T	\T'e_grave'\` (grave accent); equivalent to \fB\e(ga\fR\T
-\T'e_-'2.1\T	\T'e_-'\fB\e\-\fR\T	\T'e_-'\- Minus sign in the \fIcurrent\fR font\T
-\T'e__'12.4\T	\T'e__'\fB\e_\fR\T	\T'e__'\_ (underrule character); equivalent to \fB\e(ul\fR\T
-\T'e_.'7\T	\T'e_.'\fB\e\^.\fR\T	\T'e_.'Period (dot) (see \fBde\fR)\T
-\T'e_ '4.1\T	\T'e_ '\fB\e\fR(space)\T	\T'e_ 'Unpaddable space-size space character\T
+2.1	\T'e_grave'\fB\e\`\fR\T	\` (grave accent); equivalent to \fB\e(ga\fR
+2.1	\T'e_-'\fB\e\-\fR\T	\- Minus sign in the \fIcurrent\fR font
+12.4	\T'e__'\fB\e_\fR\T	\_ (underrule character); equivalent to \fB\e(ul\fR
+7	\T'e_.'\fB\e\^.\fR\T	Period (dot) (see \fBde\fR)
+4.1	\T'e_ '\fB\e\fR(space)\T	Unpaddable space-size space character
 4.1	\T'e_~'\fB\e\[asciitilde]\fR\T	Paddable no-break space character
-\T'e_0'11.1\T	\T'e_0'\fB\e0\fR\T	\T'e_0'Digit width space\T
+11.1	\T'e_0'\fB\e0\fR\T	Digit width space
 .tr ||
-\T'e_|'11.1\T	\T'e_|'\fB\e\||\fR\T	\T'e_|'1/6\|em narrow space character (zero width in \*(NR)\T
+11.1	\T'e_|'\fB\e\||\fR\T	1/6\|em narrow space character (zero width in \*(NR)
 .tr |
-\T'e_^'11.1\T	\T'e_^'\fB\e^\fR\T	\T'e_^'1/12\|em half-narrow space character (zero width in \*(NR)\T
+11.1	\T'e_^'\fB\e^\fR\T	1/12\|em half-narrow space character (zero width in \*(NR)
 .tr &&
-\T'e_&'4.1\T	\T'e_&'\fB\e&\fR\T	\T'e_&'Non-printing, zero width character\T
+4.1	\T'e_&'\fB\e&\fR\T	Non-printing, zero width character
 .tr &.
-\T'e_)'4.1\T	\T'e_)'\fB\e)\fR\T	\T'e_)'Transparent non-printing zero width character\T
-\T'e_!'10.6\T	\T'e_!'\fB\e!\fR\T	\T'e_!'Transparent line indicator\T
-\T'e_"'10.8\T	\T'e_"'\fB\e"\fR\T	\T'e_"'Beginning of comment\T
-\T'e_#'10.8\T	\T'e_#'\fB\e#\fR\T	\T'e_#'Comment including newline\T
-\T'e_$'7.3\T	\T'e_$'\fB\e$\fIn\fR,\fB\e$(\fInn\fR,\fB\e$[\fInnn\fB]\fR\T	\T'e_$'Interpolate argument \fIn\fR, \fInn\fR, or \fInnn\fR\T
-\T'e_$*'7.3\T	\T'e_$*'\fB\e$\(**\fR\T	\T'e_$*'Interpolate all arguments separated by spaces\T
-\T'e_$@'7.3\T	\T'e_$@'\fB\e$@\fR\T	\T'e_$@'Interpolate all arguments in double quotes\T
-\T'e_$0'7.3\T	\T'e_$0'\fB\e$0\fR\T	\T'e_$0'Interpolate name of current macro or string\T
-\T'e_%'13\T	\T'e_%'\fB\e%\fR\T	\T'e_%'Default optional hyphenation character\T
-\T'e_('2.1\T	\T'e_('\fB\e(\fIxx\fR\T	\T'e_('Character named \fIxx\fR\T
-\T'e_['2.1\T	\T'e_['\fB\e[\fIxxx\fR]\T	\T'e_['Character named \fIxxx\fP\T
-\T'e_*'7.1\T	\T'e_*'\fB\e\(**\fIx\fR,\fB\e\(**(\fIxx\fR,\fB\e\(**[\fIxxx\fB]\fR\T	\T'e_*'Interpolate string \fIx\fR, \fIxx\fR, or \fIxxx\fR\T
-\T'e_*'7.1\T	\T'e_*'\fB\e\(**[\fIxxx\ arg\ \fR...\fB]\fR\T	\T'e_*'Interpolate string \fIxxx\fR with arguments \fIarg\ \fR...\T
-\T'e_:'13\T	\T'e_:'\fB\e:\fR\T	\T'e_:'Optional line-break character\T
-\T'e_;'10.2\T	\T'e_;'\fB\e;\fR\T	\T'e_;'Ligature suppressor\T
-\T'e_@'17\T	\T'e_@'\fB\e@{\fR,\fB\e@}\fR\T	\T'e_@'Inline environment push/pop\T
-\T'e_a'9.1\T	\T'e_a'\fB\ea\fR\T	\T'e_a'Non-interpreted leader character\T
-\T'e_A'24.6\T	\T'e_A'\fB\eA\fI\'string\'\fR\T	\T'e_A'Anchor definition\T
-\T'e_b'12.3\T	\T'e_b'\fB\eb\fI\'abc...\'\fR\T	\T'e_b'Bracket building function\T
-\T'e_B'1.4\T	\T'e_B'\fB\eB\fI\(aqstring\(aq\fR\T	\T'e_B'Test if\
- \fIstring\fR is a numerical expression\T
-\T'e_c'4.2\T	\T'e_c'\fB\ec\fR\T	\T'e_c'Interrupt text processing\T
-\T'e_C'2.1\T	\T'e_C'\fB\eC\fI\'xxx\'\fR\T	\T'e_C'Character named \fIxxx\fP\T
-\T'e_d'11.1\T	\T'e_d'\fB\ed\fR\T	\T'e_d'Forward (down) 1/2\|em vertical motion (1/2 line in \*(NR)\T
-\T'e_D'12.5\T	\T'e_D'\fB\eD\fI\'c...\'\fR\T	\T'e_D'Draw graphics function \fIc\fP with parameters ...; \fIc\fP\^=\^\fBl\fR,\^\fBc\fR,\^\fBe\fR,\^\fBa\fP,\^\fB\(ap\fP\T
-\T'e_e'10.1\T	\T'e_e'\fB\ee\fR\T	\T'e_e'Printable version of the \fIcurrent\fR escape character\T
-\T'e_E'10.1\T	\T'e_E'\fB\eE\fR\T	\T'e_E'Escape character, not interpreted in \fIcopy mode\fR\T
-\T'e_f'2.2\T	\T'e_f'\fB\ef\fIx\fR,\fB\ef(\fIxx\fR,\fB\ef[\fIxxx\fB]\fR,\fB\ef\fIN\fR\T	\T'e_f'Change to font named \fIx\fR, \fIxx\fR, or \fIxxx\fR, or position \fIN\fR\T
-\T'e_g'8\T	\T'e_g'\fB\eg\fIx\fR,\fB\eg(\fIxx\fR,\fB\eg[\fIxxx\fB]\fR\T	\T'e_g'Format of number register \fIx\fP, \fIxx\fR, or \fIxxx\fR\T
-\T'e_h'11.1\T	\T'e_h'\fB\eh\fI\'N\'\fR\T	\T'e_h'Local horizontal motion; move right \fIN\fR (negative left)\T
-\T'e_H'2.3\T	\T'e_H'\fB\eH\fI\'N\'\fR\T	\T'e_H'Height of current font is \fIN\fR\T
-\T'e_I'1.1\T	\T'e_I'\fB\eI\fI\(aqstring\(aq\fR\T	\T'e_B'Test if\
- \fIstring\fR is a valid identifier name\T
-\T'e_j'4.1\T	\T'e_j'\fB\ej\fI\'\(+-N\'\fR\T	\T'e_j'Penalty for breaking a line after the current word is \fIN\fR\T
-\T'e_J'4.1\T	\T'e_J'\fB\eJ\fI\'\(+-N\'\fR\T	\T'e_J'Default line breaking penalty is \fIN\fR\T
-\T'e_k'11.3\T	\T'e_k'\fB\ek\fIx\fR,\fB\ek(\fIxx\fR,\fB\ek[\fIxxx\fB]\fR\T	\T'e_k'Mark horizontal \fIinput\fR place in register \fIx,\fR \fIxx\fR, or \fIxxx\fR\T
-\T'e_l'12.4\T	\T'e_l'\fB\el\fI\^\'Nc\'\fR\T	\T'e_l'Horizontal line drawing function (optionally with \fIc\fR\|)\T
-\T'e_L'12.4\T	\T'e_L'\fB\eL\fI\'Nc\'\fR\T	\T'e_L'Vertical line drawing function (optionally with \fIc\fR\|)\T
-\T'e_n'8\T	\T'e_n'\fB\en\fIx\fR,\fB\en(\fIxx\fR,\fB\en[\fIxxx\fB]\fR\T	\T'e_n'Interpolate number register \fIx\fR, \fIxx\fR, or \fIxxx\fR\T
-\T'e_N'2.\T	\T'e_N'\fB\eN\fI\'N\'\fR\T	\T'e_N'Character number \fIN\fR on current font\T
-\T'e_o'12.1\T	\T'e_o'\fB\eo\fI\'abc...\'\fR\T	\T'e_o'Overstrike characters \fIa, b, c, ...\fR\T
-\T'e_p'4.1\T	\T'e_p'\fB\ep\fR\T	\T'e_p'Break and spread output line\T
-\T'e_P'7.5\T	\T'e_P'\fB\eP\fIx\fR,\fB\eP(\fIxx\fR,\fB\eP[\fIxxx\fB]\fR\T	\T'e_P'Output-line trap \fIx\fR, \fIxx\fR, or \fIxxx\fR\T
-\T'e_r'11.1\T	\T'e_r'\fB\er\fR\T	\T'e_r'Reverse 1\|em vertical motion (reverse line in \*(NR)\T
-\T'e_R'8\T	\T'e_R'\fB\eR\fI\'R\ \(+-N\'\fR\T	\T'e_R'Set number register \fIR\fR to \fI\(+-N\fR\T
+4.1	\T'e_)'\fB\e)\fR\T	Transparent non-printing zero width character
+10.6	\T'e_!'\fB\e!\fR\T	Transparent line indicator
+10.8	\T'e_"'\fB\e"\fR\T	Beginning of comment
+10.8	\T'e_#'\fB\e#\fR\T	Comment including newline
+7.3	\T'e_$'\fB\e$\fIn\fR,\fB\e$(\fInn\fR,\fB\e$[\fInnn\fB]\fR\T	Interpolate argument \fIn\fR, \fInn\fR, or \fInnn\fR
+7.3	\T'e_$*'\fB\e$\(**\fR\T	Interpolate all arguments separated by spaces
+7.3	\T'e_$@'\fB\e$@\fR\T	Interpolate all arguments in double quotes
+7.3	\T'e_$0'\fB\e$0\fR\T	Interpolate name of current macro or string
+13	\T'e_%'\fB\e%\fR\T	Default optional hyphenation character
+2.1	\T'e_('\fB\e(\fIxx\fR\T	Character named \fIxx\fR
+2.1	\T'e_['\fB\e[\fIxxx\fR]\T	Character named \fIxxx\fP
+7.1	\T'e_*'\fB\e\(**\fIx\fR,\fB\e\(**(\fIxx\fR,\fB\e\(**[\fIxxx\fB]\fR\T	Interpolate string \fIx\fR, \fIxx\fR, or \fIxxx\fR
+7.1	\T'e_*'\fB\e\(**[\fIxxx\ arg\ \fR...\fB]\fR\T	Interpolate string \fIxxx\fR with arguments \fIarg\ \fR...
+13	\T'e_:'\fB\e:\fR\T	Optional line-break character
+10.2	\T'e_;'\fB\e;\fR\T	Ligature suppressor
+17	\T'e_@'\fB\e@{\fR,\fB\e@}\fR\T	Inline environment push/pop
+9.1	\T'e_a'\fB\ea\fR\T	Non-interpreted leader character
+24.6	\T'e_A'\fB\eA\fI\'string\'\fR\T	Anchor definition
+12.3	\T'e_b'\fB\eb\fI\'abc...\'\fR\T	Bracket building function
+1.4	\T'e_B'\fB\eB\fI\(aqstring\(aq\fR\T	Test if\
+ \fIstring\fR is a numerical expression
+4.2	\T'e_c'\fB\ec\fR\T	Interrupt text processing
+2.1	\T'e_C'\fB\eC\fI\'xxx\'\fR\T	Character named \fIxxx\fP
+11.1	\T'e_d'\fB\ed\fR\T	Forward (down) 1/2\|em vertical motion (1/2 line in \*(NR)
+12.5	\T'e_D'\fB\eD\fI\'c...\'\fR\T	Draw graphics function \fIc\fP with parameters ...; \fIc\fP\^=\^\fBl\fR,\^\fBc\fR,\^\fBe\fR,\^\fBa\fP,\^\fB\(ap\fP
+10.1	\T'e_e'\fB\ee\fR\T	Printable version of the \fIcurrent\fR escape character
+10.1	\T'e_E'\fB\eE\fR\T	Escape character, not interpreted in \fIcopy mode\fR
+2.2	\T'e_f'\fB\ef\fIx\fR,\fB\ef(\fIxx\fR,\fB\ef[\fIxxx\fB]\fR,\fB\ef\fIN\fR\T	Change to font named \fIx\fR, \fIxx\fR, or \fIxxx\fR, or position \fIN\fR
+8	\T'e_g'\fB\eg\fIx\fR,\fB\eg(\fIxx\fR,\fB\eg[\fIxxx\fB]\fR\T	Format of number register \fIx\fP, \fIxx\fR, or \fIxxx\fR
+11.1	\T'e_h'\fB\eh\fI\'N\'\fR\T	Local horizontal motion; move right \fIN\fR (negative left)
+2.3	\T'e_H'\fB\eH\fI\'N\'\fR\T	Height of current font is \fIN\fR
+1.1	\T'e_I'\fB\eI\fI\(aqstring\(aq\fR\T	Test if\
+ \fIstring\fR is a valid identifier name
+4.1	\T'e_j'\fB\ej\fI\'\(+-N\'\fR\T	Penalty for breaking a line after the current word is \fIN\fR
+4.1	\T'e_J'\fB\eJ\fI\'\(+-N\'\fR\T	Default line breaking penalty is \fIN\fR
+11.3	\T'e_k'\fB\ek\fIx\fR,\fB\ek(\fIxx\fR,\fB\ek[\fIxxx\fB]\fR\T	Mark horizontal \fIinput\fR place in register \fIx,\fR \fIxx\fR, or \fIxxx\fR
+12.4	\T'e_l'\fB\el\fI\^\'Nc\'\fR\T	Horizontal line drawing function (optionally with \fIc\fR\|)
+12.4	\T'e_L'\fB\eL\fI\'Nc\'\fR\T	Vertical line drawing function (optionally with \fIc\fR\|)
+8	\T'e_n'\fB\en\fIx\fR,\fB\en(\fIxx\fR,\fB\en[\fIxxx\fB]\fR\T	Interpolate number register \fIx\fR, \fIxx\fR, or \fIxxx\fR
+2.	\T'e_N'\fB\eN\fI\'N\'\fR\T	Character number \fIN\fR on current font
+12.1	\T'e_o'\fB\eo\fI\'abc...\'\fR\T	Overstrike characters \fIa, b, c, ...\fR
+4.1	\T'e_p'\fB\ep\fR\T	Break and spread output line
+7.5	\T'e_P'\fB\eP\fIx\fR,\fB\eP(\fIxx\fR,\fB\eP[\fIxxx\fB]\fR\T	Output-line trap \fIx\fR, \fIxx\fR, or \fIxxx\fR
+11.1	\T'e_r'\fB\er\fR\T	Reverse 1\|em vertical motion (reverse line in \*(NR)
+8	\T'e_R'\fB\eR\fI\'R\ \(+-N\'\fR\T	Set number register \fIR\fR to \fI\(+-N\fR
 .ne 3
-\T'e_s'2.3\T	T{
+2.3	T{
 \T'e_s'\fB\es\fIN\fR,\fB\es\fI\(+-N\fR,
 \fB\es\'\fI\(+-N\fB\'\fR,\fB\es\fI\(+-\fB\'\fIN\fB\'\fR,
 \fB\es[\fI\(+-N\fB]\fR,\fB\es\fI\(+-\fB[\fIN\fB]\fR\T
-T}	\T'e_s'Point-size change function\T
-\T'e_S'2.2\T	\T'e_S'\fB\eS\fI\'N\'\fR\T	\T'e_S'Slant output \fIN\fP degrees\T
-\T'e_t'9.1\T	\T'e_t'\fB\et\fR\T	\T'e_t'Non-interpreted horizontal tab\T
-\T'e_T'24.6\T	\T'e_T'\fB\eT\fI\'string\'\fR\T	\T'e_T'Intra-document link definition\T
-\T'e_u'11.1\T	\T'e_u'\fB\eu\fR\T	\T'e_u'Reverse (up) 1/2\|em vertical motion (1/2 line in \*(NR)\T
-\T'e_U'2.1\T	\T'e_U'\fB\eU\fI\'X\'\fR\T	\T'e_U'Character at Unicode position U+\fIX\fR\T
-\T'e_v'11.1\T	\T'e_v'\fB\ev\fI\'N\'\fR\T	\T'e_v'Local vertical motion; move down \fIN\fR (negative up)\T
-\T'e_V'20\T	\T'e_V'\fB\eV\fIx\fR,\fB\eV(\fIxx\fR,\fB\eV[\fIxxx\fB]\fR\T	\T'e_V'Environment variable \fIx\fP, \fIxx\fR, or \fIxxx\fR\T
-\T'e_w'11.2\T	\T'e_w'\fB\ew\fI\'string\'\fR\T	\T'e_w'Interpolate width of \fIstring\fR\T
-\T'e_W'24.6\T	\T'e_W'\fB\eW\fI\'string\'\fR\T	\T'e_W'URI link definition\T
-\T'e_x'5.2\T	\T'e_x'\fB\ex\fI\'N\'\fR\T	\T'e_x'Extra line-space function (negative before, positive after)\T
-\T'e_X'10.7\T	\T'e_X'\fB\eX\fI\'string\'\fR\T	\T'e_X'Output \fIstring\fP as device control function\T
-\T'e_Y'10.7\T	\T'e_Y'\fB\eY\fIx\fR,\fB\eY(\fIxx\fR,\fB\eY[\fIxxx\fB]\fR\T	\T'e_Y'Output contents of macro \fIx\fP, \fIxx\fR, or \fIxxx\fR\T as device control function
-\T'e_z'12.2\T	\T'e_z'\fB\ez\fIc\fR\T	\T'e_z'Print \fIc\fR with zero width (without spacing)\T
-\T'e_Z'12.2\T	\T'e_Z'\fB\eZ\fI\'string\'\fR\T	\T'e_Z'Print \fIstring\fR with zero width and height\T
-\T'e_{'16\T	\T'e_{'\fB\e{\fR\T	\T'e_{'Begin conditional input\T
-\T'e_}'16\T	\T'e_}'\fB\e}\fR\T	\T'e_}'End conditional input\T
-\T'e_newline'10.7\T	\T'e_newline'\fB\e\fR(newline)\T	\T'e_newline'Concealed (ignored) newline\T
+T}	Point-size change function
+2.2	\T'e_S'\fB\eS\fI\'N\'\fR\T	Slant output \fIN\fP degrees
+9.1	\T'e_t'\fB\et\fR\T	Non-interpreted horizontal tab
+24.6	\T'e_T'\fB\eT\fI\'string\'\fR\T	Intra-document link definition
+11.1	\T'e_u'\fB\eu\fR\T	Reverse (up) 1/2\|em vertical motion (1/2 line in \*(NR)
+2.1	\T'e_U'\fB\eU\fI\'X\'\fR\T	Character at Unicode position U+\fIX\fR
+11.1	\T'e_v'\fB\ev\fI\'N\'\fR\T	Local vertical motion; move down \fIN\fR (negative up)
+20	\T'e_V'\fB\eV\fIx\fR,\fB\eV(\fIxx\fR,\fB\eV[\fIxxx\fB]\fR\T	Environment variable \fIx\fP, \fIxx\fR, or \fIxxx\fR
+11.2	\T'e_w'\fB\ew\fI\'string\'\fR\T	Interpolate width of \fIstring\fR
+24.6	\T'e_W'\fB\eW\fI\'string\'\fR\T	URI link definition
+5.2	\T'e_x'\fB\ex\fI\'N\'\fR\T	Extra line-space function (negative before, positive after)
+10.7	\T'e_X'\fB\eX\fI\'string\'\fR\T	Output \fIstring\fP as device control function
+10.7	\T'e_Y'\fB\eY\fIx\fR,\fB\eY(\fIxx\fR,\fB\eY[\fIxxx\fB]\fR\T	Output contents of macro \fIx\fP, \fIxx\fR, or \fIxxx\fR as device control function
+12.2	\T'e_z'\fB\ez\fIc\fR\T	Print \fIc\fR with zero width (without spacing)
+12.2	\T'e_Z'\fB\eZ\fI\'string\'\fR\T	Print \fIstring\fR with zero width and height
+16	\T'e_{'\fB\e{\fR\T	Begin conditional input
+16	\T'e_}'\fB\e}\fR\T	End conditional input
+10.7	\T'e_newline'\fB\e\fR(newline)\T	Concealed (ignored) newline
 \(en	\fB\e\fIc\fR	\fIc\fR, any character not listed above
 .TE
 .fi
@@ -2271,19 +2271,19 @@ Section	Register
 Reference	Name	Description
 .ft R
 .xx
-\T'n_%'3\T	\T'n_%'\fB%\fR\T	\T'n_%'Current page number.\T
+3	\T'n_%'\fB%\fR\T	Current page number.
 \(en	\fBc.\fR	Number of \fIlines\fR read from current input file.
 11.2	\T'n_ct'\fBct\fR\T	Character type (set by \fB\ew\fP \fIwidth\fR function).
-\T'n_dl'7.4\T	\T'n_dl'\fBdl\fR\T	\T'n_dl'Width (maximum) of last completed diversion.\T
-\T'n_dn'7.4\T	\T'n_dn'\fBdn\fR\T	\T'n_dn'Height (vertical size) of last completed diversion.\T
+7.4	\T'n_dl'\fBdl\fR\T	Width (maximum) of last completed diversion.
+7.4	\T'n_dn'\fBdn\fR\T	Height (vertical size) of last completed diversion.
 \(en	\fBdw\fR	Current day of the week (1\(en7).
 \(en	\fBdy\fR	Current day of the month (1\(en31).
 \(en	\fBhours\fR	Hours portion of current local time (0\(en23).
-\T'n_hp'11.3\T	\T'n_hp'\fBhp\fR\T	\T'n_hp'Current horizontal place on \fIinput\fR line.\T
-\T'n_ln'15\T	\T'n_ln'\fBln\fR\T	\T'n_ln'Output line number.\T
+11.3	\T'n_hp'\fBhp\fR\T	Current horizontal place on \fIinput\fR line.
+15	\T'n_ln'\fBln\fR\T	Output line number.
 \(en	\fBminutes\fR	Minutes portion of current local time (0\(en59).
 \(en	\fBmo\fR	Current month (1\(en12).
-\T'n_nl'4.1\T	\T'n_nl'\fBnl\fR\T	\T'n_nl'Vertical position of last printed text baseline.\T
+4.1	\T'n_nl'\fBnl\fR\T	Vertical position of last printed text baseline.
 11.2	\T'n_rsb'\fBrsb\fR\T	Visual depth of string below baseline (generated by \fB\ew\fP \fIwidth\fR function).
 11.2	\T'n_rst'\fBrst\fR\T	Visual height of string above baseline (generated by \fB\ew\fP \fIwidth\fR function).
 11.2	\T'n_sb'\fBsb\fR\T	Depth of string below baseline (generated by \fB\ew\fP \fIwidth\fR function).
@@ -2291,7 +2291,7 @@ Reference	Name	Description
 11.2	\T'n_st'\fBst\fR\T	Height of string above baseline (generated by \fB\ew\fP \fIwidth\fR function).
 \(en	\fByear\fR	Current year.
 \(en	\fByr\fR	Current year minus 1900.
-\T'n_.g'25.1\T	\T'n_.g'\fB&g\fR\T	\T'n_.g'Current \*(GR compatibility mode (0=off).\T
+25.1	\T'n_.g'\fB&g\fR\T	Current \*(GR compatibility mode (0=off).
 .TE
 .sp
 .nr nosave 1
@@ -2310,56 +2310,56 @@ Section	Register
 Reference	Name	Description
 .ft R
 .xx
-\T'n_$$'19\T	\T'n_$$'\fB$$\fR\T	\T'n_$$'Process id of \*(NR or \*[TR.]\T
-\T'n_.$'7.3\T	\T'n_.$'\fB&$\fR\T	\T'n_.$'Number of arguments available at the current macro level.\T
+19	\T'n_$$'\fB$$\fR\T	Process id of \*(NR or \*[TR.]
+7.3	\T'n_.$'\fB&$\fR\T	Number of arguments available at the current macro level.
 \(en	\fB&A\fR	Set to 1 in \*[TR,] if \fB-a\fR option used; always 1 in \*[NR.]
-\T'n_.a'5.2\T	\T'n_.a'\fB&a\fR\T	\T'n_.a'Post-line extra line-space most recently utilized \
-using \fB\ex\fI\'N\'\fR.\T
+5.2	\T'n_.a'\fB&a\fR\T	Post-line extra line-space most recently utilized \
+using \fB\ex\fI\'N\'\fR.
 4	\T'n_.adjlapenalty'\fB&adjlapenalty\fR\T	Adjacent line letter adjustment incompatibility penalty.
 4	\T'n_.adjlathreshold'\fB&adjlathreshold\fR\T	Adjacent line letter adjustment incompatibility threshold.
 4	\T'n_.adjpenalty'\fB&adjpenalty\fR\T	Adjacent line word space incompatibility penalty.
 4	\T'n_.adjthreshold'\fB&adjthreshold\fR\T	Adjacent line word space incompatibility threshold.
 4	\T'n_.adjthreshupr'\fB&adjthreshupr\fR\T	Adjacent line word space incompatibility upper threshold.
-\T'n_.ascender'5.4\T	\T'n_.ascender'\fB&ascender\fR\T	\T'n_.ascender'Ascender of current font and point size.\T
-\T'n_.b'2.3\T	\T'n_.b'\fB&b\fR\T	\T'n_.b'Emboldening level.\T
-\T'n_.breakchar'13\T	\T'n_.breakchar'\fB&breakchar\fR\T	\T'n_.breakchar'Current optional line break characters.\T
-\T'n_.brnl'4.1\T	\T'n_.brnl'\fB&brnl\fR\T	\T'n_.brnl'Remaining number of lines with break at newline.\T
-\T'n_.brpnl'4.1\T	\T'n_.brpnl'\fB&brpnl\fR\T	\T'n_.brpnl'Remaining number of lines with break and spread at newline.\T
+5.4	\T'n_.ascender'\fB&ascender\fR\T	Ascender of current font and point size.
+2.3	\T'n_.b'\fB&b\fR\T	Emboldening level.
+13	\T'n_.breakchar'\fB&breakchar\fR\T	Current optional line break characters.
+4.1	\T'n_.brnl'\fB&brnl\fR\T	Remaining number of lines with break at newline.
+4.1	\T'n_.brpnl'\fB&brpnl\fR\T	Remaining number of lines with break and spread at newline.
 \(en	\fB&c\fR	Number of \fIlines\fR read from current input file.
-\T'n_.cdp'11.2\T	\T'n_.cdp'\fB&cdp\fR\T	\T'n_.cdp'Visual depth below baseline of previous character.\T
-\T'n_.ce'4.1\T	\T'n_.ce'\fB&ce\fR\T	\T'n_.ce'Remaining number of lines to be centered.\T
-\T'n_.cht'11.2\T	\T'n_.cht'\fB&cht\fR\T	\T'n_.cht'Visual height above baseline of previous character.\T
-\T'n_.connectchar'12.4\T	\T'n_.connectchar'\fB&connectchar\fR\T	\T'n_.connectchar'Current characters connected for line drawing [sic].\T
-\T'n_.d'7.4\T	\T'n_.d'\fB&d\fR\T	\T'n_.d'Current vertical place in current diversion; equal to \fBnl\fR, if no diversion.\T
-\T'n_.defpenalty'4.1\T	\T'n_.defpenalty'\fB&defpenalty\fR\T	\T'n_.defpenalty'Default line breaking penalty.\T
-\T'n_.descender'5.4\T	\T'n_.descender'\fB&descender\fR\T	\T'n_.descender'Descender of current font and point size.\T
-\T'n_.dilev'7.4\T	\T'n_.dilev'\fB&dilev\fR\T	\T'n_.dilev'Current diversion level.\T
+11.2	\T'n_.cdp'\fB&cdp\fR\T	Visual depth below baseline of previous character.
+4.1	\T'n_.ce'\fB&ce\fR\T	Remaining number of lines to be centered.
+11.2	\T'n_.cht'\fB&cht\fR\T	Visual height above baseline of previous character.
+12.4	\T'n_.connectchar'\fB&connectchar\fR\T	Current characters connected for line drawing [sic].
+7.4	\T'n_.d'\fB&d\fR\T	Current vertical place in current diversion; equal to \fBnl\fR, if no diversion.
+4.1	\T'n_.defpenalty'\fB&defpenalty\fR\T	Default line breaking penalty.
+5.4	\T'n_.descender'\fB&descender\fR\T	Descender of current font and point size.
+7.4	\T'n_.dilev'\fB&dilev\fR\T	Current diversion level.
 4	\T'n_.elpchar'\fB&elpchar\fR\T	Current end-of-line punctuation characters [sic].
 4	\T'n_.elppen'\fB&elppen\fR\T	End of line punctuation penalty.
-\T'n_.ev'17\T	\T'n_.ev'\fB&ev\fR\T	\T'n_.ev'Name of current environment [sic].\T
+17	\T'n_.ev'\fB&ev\fR\T	Name of current environment [sic].
 13	\T'n_.exhyp'\fB&exhyp\fP\T	Explicit hyphen penalty.
-\T'n_.f'2.2\T	\T'n_.f'\fB&f\fR\T	\T'n_.f'Current font as physical quadrant (1-255).\T
-\T'n_.fp'2.2\T	\T'n_.fp'\fB&fp\fR\T	\T'n_.fp'Next unused physical font quadrant.\T
-\T'n_.fzoom'2.3\T	\T'n_.fzoom'\fB&fzoom\fR\T	\T'n_.fzoom'Current font zoom factor (may be a decimal fraction).\T
-\T'n_.F'20\T	\T'n_.F'\fB&F\fR\T	\T'n_.F'Current input file name [sic].\T
-\T'n_.h'4\T	\T'n_.h'\fB&h\fR\T	\T'n_.h'Text baseline high-water mark on current page or diversion.\T
-\T'n_.hlc'13\T	\T'n_.hlc'\fB&hlc\fR\T	\T'n_.hlc'Current number of consecutive hyphenated lines.\T
-\T'n_.hlm'13\T	\T'n_.hlm'\fB&hlm\fR\T	\T'n_.hlm'Maximum number of consecutive hyphenated lines.\T
-\T'n_.hy'13\T	\T'n_.hy'\fB&hy\fR\T	\T'n_.hy'Current hyphenation flags.\T
-\T'n_.hylang'13\T	\T'n_.hylang'\fB&hylang\fR\T	\T'n_.hylang'Current hyphenation language [sic].\T
-\T'n_.hylen'13\T	\T'n_.hylen'\fB&hylen\fR\T	\T'n_.hylen'Current minimum hyphenation word length.\T
-\T'n_.hypp'13\T	\T'n_.hypp'\fB&hypp\fR\T	\T'n_.hypp'Penalty for hyphen in \fBad p\fR mode.\T
-\T'n_.hypp2'13\T	\T'n_.hypp2'\fB&hypp2\fR\T	\T'n_.hypp2'Penalty for consecutive hyphenated lines in \fBad\ p\fR mode.\T
-\T'n_.hypp3'13\T	\T'n_.hypp3'\fB&hypp3\fR\T	\T'n_.hypp3'Penalty for hyphenating the last word of a paragraph in \fBad\ p\fR mode.\T
+2.2	\T'n_.f'\fB&f\fR\T	Current font as physical quadrant (1-255).
+2.2	\T'n_.fp'\fB&fp\fR\T	Next unused physical font quadrant.
+2.3	\T'n_.fzoom'\fB&fzoom\fR\T	Current font zoom factor (may be a decimal fraction).
+20	\T'n_.F'\fB&F\fR\T	Current input file name [sic].
+4	\T'n_.h'\fB&h\fR\T	Text baseline high-water mark on current page or diversion.
+13	\T'n_.hlc'\fB&hlc\fR\T	Current number of consecutive hyphenated lines.
+13	\T'n_.hlm'\fB&hlm\fR\T	Maximum number of consecutive hyphenated lines.
+13	\T'n_.hy'\fB&hy\fR\T	Current hyphenation flags.
+13	\T'n_.hylang'\fB&hylang\fR\T	Current hyphenation language [sic].
+13	\T'n_.hylen'\fB&hylen\fR\T	Current minimum hyphenation word length.
+13	\T'n_.hypp'\fB&hypp\fR\T	Penalty for hyphen in \fBad p\fR mode.
+13	\T'n_.hypp2'\fB&hypp2\fR\T	Penalty for consecutive hyphenated lines in \fBad\ p\fR mode.
+13	\T'n_.hypp3'\fB&hypp3\fR\T	Penalty for hyphenating the last word of a paragraph in \fBad\ p\fR mode.
 13	\T'n_.hypp4'\fB&hypp4\fR\T	Penalty for hyphenating the penultimate line in \fBad p\fP mode.
-\T'n_.H'11.1\T	\T'n_.H'\fB&H\fR\T	\T'n_.H'Available horizontal resolution in basic units.\T
-\T'n_.i'6\T	\T'n_.i'\fB&i\fR\T	\T'n_.i'Current indent as set by \fBin\fR.\T
-\T'n_.in'6\T	\T'n_.in'\fB&in\fR\T	\T'n_.in'Current indent including temporary indent, if any.\T
-\T'n_.int'4.2\T	\T'n_.int'\fB&int\fR\T	\T'n_.int'Non-zero if the previous line was interrupted with \fB\ec\fR.\T
-\T'n_.j'4\T	\T'n_.j'\fB&j\fR\T	\T'n_.j'Current \fBad\fP mode.\T
-\T'n_.k'4.1\T	\T'n_.k'\fB&k\fR\T	\T'n_.k'Current output horizontal position.\T
-\T'n_.kc'4.2\T	\T'n_.kc'\fB&kc\fR\T	\T'n_.kc'Output horizontal length of interrupted word, if any.\T
-\T'n_.l'6\T	\T'n_.l'\fB&l\fR\T	\T'n_.l'Current line length.\T
+11.1	\T'n_.H'\fB&H\fR\T	Available horizontal resolution in basic units.
+6	\T'n_.i'\fB&i\fR\T	Current indent as set by \fBin\fR.
+6	\T'n_.in'\fB&in\fR\T	Current indent including temporary indent, if any.
+4.2	\T'n_.int'\fB&int\fR\T	Non-zero if the previous line was interrupted with \fB\ec\fR.
+4	\T'n_.j'\fB&j\fR\T	Current \fBad\fP mode.
+4.1	\T'n_.k'\fB&k\fR\T	Current output horizontal position.
+4.2	\T'n_.kc'\fB&kc\fR\T	Output horizontal length of interrupted word, if any.
+6	\T'n_.l'\fB&l\fR\T	Current line length.
 4	\T'n_.lastlinestretch'\fB&lastlinestretch\fR\T	Last line stretch setting.
 4	\T'n_.letcalc'\fB&letcalc\fR\T	Letter adjustment calculation method.
 4	\T'n_.letpen'\fB&letpen\fR\T	Penalty for use of letter adjustment.
@@ -2370,47 +2370,47 @@ using \fB\ex\fI\'N\'\fR.\T
 4	\T'n_.letthreshupr'\fB&letthreshupr\fR\T	Upper end of letter adjustment exclusion zone.
 4	\T'n_.linepenalty'\fB&linepenalty\fR\T	Penalty for each line.
 4	\T'n_.looseness'\fB&looseness\fR\T	Number of lines to change paragraph length.
-\T'n_.lt'14\T	\T'n_.lt'\fB&lt\fR\T	\T'n_.lt'Current title length.\T
-\T'n_.lc_ctype'2.1\T	\T'n_.lc_ctype'\fB&lc_ctype\fR\T	\T'n_.lc_ctype'Current \s-1LC_CTYPE\s0 locale [sic].\T
-\T'n_.letss'4.1\T	\T'n_.letss'\fB&letss\fR\T	\T'n_.letss'Current dynamic letter space threshold.\T
-\T'n_.lpfx'20\T	\T'n_.lpfx'\fB&lpfx\fR\T	\T'n_.lpfx'Current line prefix [sic].\T
-\T'n_.lshmin'4.1\T	\T'n_.lshmin'\fB&lshmin\fR\T	\T'n_.lshmin'Current minimum dynamic letter shape (may be a decimal fraction).\T
-\T'n_.lshmax'4.1\T	\T'n_.lshmax'\fB&lshmax\fR\T	\T'n_.lshmax'Current maximum dynamic letter shape (may be a decimal fraction).\T
-\T'n_.lspmin'4.1\T	\T'n_.lspmin'\fB&lspmin\fR\T	\T'n_.lspmin'Current minimum dynamic letter space (may be a decimal fraction).\T
-\T'n_.lspmax'4.1\T	\T'n_.lspmax'\fB&lspmax\fR\T	\T'n_.lspmax'Current maximum dynamic letter space (may be a decimal fraction).\T
-\T'n_.L'5.1\T	\T'n_.L'\fB&L\fR\T	\T'n_.L'Current \fBls\fP value.\T
-\T'n_.minss'4.1\T	\T'n_.minss'\fB&minss\fR\T	\T'n_.minss'Current minimum space size.\T
-\T'n_.n'4\T	\T'n_.n'\fB&n\fR\T	\T'n_.n'Length of text portion on previous output line.\T
-\T'n_.ns'5\T	\T'n_.ns'\fB&ns\fR\T	\T'n_.ns'Non-zero if no-space mode is active.\T
-\T'n_.nhychar'13\T	\T'n_.nhychar'\fB&nhychar\fR\T	\T'n_.nhychar'Current hyphenation-inhibiting characters.\T
-\T'n_.o'3\T	\T'n_.o'\fB&o\fR\T	\T'n_.o'Current page offset.\T
-4	\T'n_.overrunmin'\fB&overrunmin\fR\T	Current minimum length of last line..
+14	\T'n_.lt'\fB&lt\fR\T	Current title length.
+2.1	\T'n_.lc_ctype'\fB&lc_ctype\fR\T	Current \s-1LC_CTYPE\s0 locale [sic].
+4.1	\T'n_.letss'\fB&letss\fR\T	Current dynamic letter space threshold.
+20	\T'n_.lpfx'\fB&lpfx\fR\T	Current line prefix [sic].
+4.1	\T'n_.lshmin'\fB&lshmin\fR\T	Current minimum dynamic letter shape (may be a decimal fraction).
+4.1	\T'n_.lshmax'\fB&lshmax\fR\T	Current maximum dynamic letter shape (may be a decimal fraction).
+4.1	\T'n_.lspmin'\fB&lspmin\fR\T	Current minimum dynamic letter space (may be a decimal fraction).
+4.1	\T'n_.lspmax'\fB&lspmax\fR\T	Current maximum dynamic letter space (may be a decimal fraction).
+5.1	\T'n_.L'\fB&L\fR\T	Current \fBls\fP value.
+4.1	\T'n_.minss'\fB&minss\fR\T	Current minimum space size.
+4	\T'n_.n'\fB&n\fR\T	Length of text portion on previous output line.
+5	\T'n_.ns'\fB&ns\fR\T	Non-zero if no-space mode is active.
+13	\T'n_.nhychar'\fB&nhychar\fR\T	Current hyphenation-inhibiting characters.
+3	\T'n_.o'\fB&o\fR\T	Current page offset.
+4	\T'n_.overrunmin'\fB&overrunmin\fR\T	Current minimum length of last line.
 4	\T'n_.overrunpenalty'\fB&overrunpenalty\fR\T	Current penalty for short last lines.
 4	\T'n_.overrunthreshold'\fB&overrunthreshold\fR\T	Current threshold for penalizing short last lines.
-\T'n_.p'3\T	\T'n_.p'\fB&p\fR\T	\T'n_.p'Current page length.\T
-\T'n_.padj'4\T	\T'n_.padj'\fB&padj\fR\T	\T'n_.padj'Current paragraph-at-once global setting.\T
-\T'n_.pn'3\T	\T'n_.pn'\fB&pn\fR\T	\T'n_.pn'Number of next page.\T
-\T'n_.ps'2.3\T	\T'n_.ps'\fB&ps\fR\T	\T'n_.ps'Current point size in units.\T
-\T'n_.psr'2.3\T	\T'n_.psr'\fB&psr\fR\T	\T'n_.psr'Last requested point size in units.\T
+3	\T'n_.p'\fB&p\fR\T	Current page length.
+4	\T'n_.padj'\fB&padj\fR\T	Current paragraph-at-once global setting.
+3	\T'n_.pn'\fB&pn\fR\T	Number of next page.
+2.3	\T'n_.ps'\fB&ps\fR\T	Current point size in units.
+2.3	\T'n_.psr'\fB&psr\fR\T	Last requested point size in units.
 4	\T'n_.rhanglevel'\fB&rhanglevel\fR\T	Current accounting level for right-hanging characters.
-\T'n_.rj'4.1\T	\T'n_.rj'\fB&rj\fR\T	\T'n_.rj'Remaining number of lines to be right-aligned.\T
-\T'n_.s'2.3\T	\T'n_.s'\fB&s\fR\T	\T'n_.s'Current point size (may be a decimal fraction).\T
-\T'n_.shc'13\T	\T'n_.shc'\fB&shc\fR\T	\T'n_.shc'Current soft hyphenation character [sic].\T
-\T'n_.sentchar'4.1\T	\T'n_.sentchar'\fB&sentchar\fR\T	\T'n_.sentchar'Current sentence-ending characters [sic].\T
-\T'n_.sr'2.3\T	\T'n_.sr'\fB&sr\fR\T	\T'n_.sr'Last requested point size (may be a decimal fraction).\T
-\T'n_.ss'2\T	\T'n_.ss'\fB&ss\fR\T	\T'n_.ss'Current space size.\T
-\T'n_.sss'2\T	\T'n_.sss'\fB&sss\fR\T	\T'n_.sss'Current sentence space size.\T
-\T'n_.S'9.1\T	\T'n_.S'\fB&S\fR\T	\T'n_.S'Current tab stops such that they can be passed back to \fBta\fR.\T
-\T'n_.t'7.5\T	\T'n_.t'\fB&t\fR\T	\T'n_.t'Distance to the next trap.\T
-\T'n_.tabs'9.1\T	\T'n_.tabs'\fB&tabs\fR\T	\T'n_.tabs'Current tab stops such that they can be passed back to \fBta\fR.\T
-\T'n_.transchar'4.1\T	\T'n_.transchar'\fB&transchar\fR\T	\T'n_.transchar'Current characters transparent for sentence-ending [sic].\T
+4.1	\T'n_.rj'\fB&rj\fR\T	Remaining number of lines to be right-aligned.
+2.3	\T'n_.s'\fB&s\fR\T	Current point size (may be a decimal fraction).
+13	\T'n_.shc'\fB&shc\fR\T	Current soft hyphenation character [sic].
+4.1	\T'n_.sentchar'\fB&sentchar\fR\T	Current sentence-ending characters [sic].
+2.3	\T'n_.sr'\fB&sr\fR\T	Last requested point size (may be a decimal fraction).
+2	\T'n_.ss'\fB&ss\fR\T	Current space size.
+2	\T'n_.sss'\fB&sss\fR\T	Current sentence space size.
+9.1	\T'n_.S'\fB&S\fR\T	Current tab stops such that they can be passed back to \fBta\fR.
+7.5	\T'n_.t'\fB&t\fR\T	Distance to the next trap.
+9.1	\T'n_.tabs'\fB&tabs\fR\T	Current tab stops such that they can be passed back to \fBta\fR.
+4.1	\T'n_.transchar'\fB&transchar\fR\T	Current characters transparent for sentence-ending [sic].
 \(en	\fB&T\fR	Set to 1 in \*[NR,] if \fB-T\fR option used; always 0 in \*[TR.]
-\T'n_.u'4.1\T	\T'n_.u'\fB&u\fR\T	\T'n_.u'Equal to 1 in fill mode and 0 in nofill mode.\T
-\T'n_.v'5.1\T	\T'n_.v'\fB&v\fR\T	\T'n_.v'Current vertical line spacing.\T
-\T'n_.vpt'7.5\T	\T'n_.vpt'\fB&vpt\fR\T	\T'n_.vpt'Vertical position traps enabled (1) or disabled (0).\T
-\T'n_.V'11.1\T	\T'n_.V'\fB&V\fR\T	\T'n_.V'Available vertical resolution in basic units.\T
-\T'n_.w'11.2\T	\T'n_.w'\fB&w\fR\T	\T'n_.w'Width of previous character.\T
-\T'n_.warn'21\T	\T'n_.warn'\fB&warn\fR\T	\T'n_.warn'Currently activated warning categories.\T
+4.1	\T'n_.u'\fB&u\fR\T	Equal to 1 in fill mode and 0 in nofill mode.
+5.1	\T'n_.v'\fB&v\fR\T	Current vertical line spacing.
+7.5	\T'n_.vpt'\fB&vpt\fR\T	Vertical position traps enabled (1) or disabled (0).
+11.1	\T'n_.V'\fB&V\fR\T	Available vertical resolution in basic units.
+11.2	\T'n_.w'\fB&w\fR\T	Width of previous character.
+21	\T'n_.warn'\fB&warn\fR\T	Currently activated warning categories.
 4	\T'n_.wscalc'\fB&wscalc\fR\T	Word space calculation type.
 4	\T'n_.wslwr'\fB&wslwr\fR\T	Lower word space size.
 4	\T'n_.wsmark'\fB&wsmark\fR\T	Current setting for marking word spaces.
@@ -2419,14 +2419,14 @@ using \fB\ex\fI\'N\'\fR.\T
 4	\T'n_.wswarn'\fB&wswarn\fR\T	Current word space warning level.
 4	\T'n_.wswarnlwr'\fB&wswarnlwr\fR\T	Word space warning lower threshold.
 4	\T'n_.wswarnupr'\fB&wswarnupr\fR\T	Word space warning upper threshold.
-\T'n_.x'4.1\T	\T'n_.x'\fB&x\fR\T	\T'n_.x'Remaining horizontal space on current output line.*\T
-\T'n_.X'1.1\T	\T'n_.X'\fB&X\fR\T	\T'n_.X'Current extension level.\T
-\T'n_.y'6\T	\T'n_.y'\fB&y\fR\T	\T'n_.y'Current indent including temporary indent, if any.*\T
-\T'n_.z'7.4\T	\T'n_.z'\fB&z\fR\T	\T'n_.z'Name [sic] of current diversion.\T
-\T'n_lsn'4.1\T	\T'n_lsn'\fBlsn\fR\T	\T'n_lsn'Number of leading spaces\
- of a input line in fill mode.\T
-\T'n_lss'4.1\T	\T'n_lss'\fBlss\fR\T	\T'n_lss'Horizontal space\
- corresponding to a line with leading spaces in fill mode.\T
+4.1	\T'n_.x'\fB&x\fR\T	Remaining horizontal space on current output line.*
+1.1	\T'n_.X'\fB&X\fR\T	Current extension level.
+6	\T'n_.y'\fB&y\fR\T	Current indent including temporary indent, if any.*
+7.4	\T'n_.z'\fB&z\fR\T	Name [sic] of current diversion.
+4.1	\T'n_lsn'\fBlsn\fR\T	Number of leading spaces\
+ of a input line in fill mode.
+4.1	\T'n_lss'\fBlss\fR\T	Horizontal space\
+ corresponding to a line with leading spaces in fill mode.
 .TE
 .sp -1
 .in 0
