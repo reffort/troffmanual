@@ -4305,7 +4305,7 @@ C | C | C | N |	N.
 Bin	Description	\*(TR	Space Size Ratio (%)
 \^	\^	.ss units	Lower	Upper
 _
-a	Awful tight	5\(en6	41.7	50.0
+f\(ena	Awful tight	0\(en6	0	50.0
 _
 0	Very tight	6\(en7	50.0	58.3
 1	\^	7\(en8	58.3	66.7
