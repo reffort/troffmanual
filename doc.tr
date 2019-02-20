@@ -2235,7 +2235,12 @@ T}	Point-size change function
 \(en	\fB\e\fIc\fR	\fIc\fR, any character not listed above
 .TE
 .fi
-.sp
+.sp -0.5
+In \fB\ex\fI\'...\'\fR and other functions having a pair of delimiters around
+their parameter, the delimiter choice (here\~\fB\'\fR\|) is arbitrary,
+except that it cannot look like the continuation
+of a \T'c_expr'number expression\T for \fIN\fR.
+.sp 0.5
 The escape sequences
 \fB\T'e_esc'\e\e\T\fR,
 \fB\T'e_.'\e\^.\T\fR,
@@ -2262,6 +2267,7 @@ in \T'copy mode'copy mode (\(sc7.2).\T
 .Bookmark 1 "Predefined General Number Registers"
 .nf
 .ft
+.sp -0.5
 .TS
 c2l
 c2l2l
@@ -4381,12 +4387,6 @@ If successive requests for extra space apply to the same line,
 the maximum values are used.
 The most recently utilized post-line extra line-space is available
 in the \A'n_.a'\fB.a\fR register.
-.pg
-In \fB\ex\fI\'...\'\fR and other functions having a pair of delimiters around
-their parameter (here \fB\'\fR\|),
-the delimiter choice is arbitrary,
-except that it cannot look like the continuation
-of a \T'c_expr'number expression\T for \fIN\fR.
 .sc
 Blocks of vertical space.
 A block of vertical space is ordinarily requested using \T'sp'\fBsp\fR,\T
