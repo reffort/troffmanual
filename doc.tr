@@ -122,7 +122,7 @@
 .flig BI 31
 ..
 .\" mo/dy/yr
-.ds Sccsdate 01/27/19
+.ds Sccsdate 02/21/19
 .ds Str \*[Sccsdate]
 .substring Str 0 0
 .if '\*[Str]'%' \{\
@@ -3101,8 +3101,8 @@ around 300.
 If \fIN\fR is missing, the embolden mode is turned off.
 The emboldening value \fIN\fP is in the \A'n_.b'\fB.b\fR register.
 .xx
-.bd R 3
-This paragraph is printed with \fI.bd R 3\fR.
+.bd R 300
+This paragraph is printed with \fI.bd R 300\fR.
 The mode must be still or again in effect when the characters are physically printed.
 Ignored in \*[NR.]
 .br
@@ -3249,7 +3249,7 @@ Page control
 Top and bottom margins are \fInot\fR automatically provided;
 it is conventional to define two \fImacros\fR and to set \fItraps\fR
 for them at vertical positions 0 (top) and \fI\(miN\fR (\fIN\fR from the bottom).
-See \T's_mac'\(sc7\T and \T'T2'Tutorial Examples \(scT2.\T
+See \T's_mac'\(sc7\T and \T'T2'Tutorial Examples \(scT2\T.
 A pseudo-page transition onto the \fIfirst\fR page occurs
 either when the first \fIbreak\fR occurs or
 when the first \fInon-diverted\fR text processing occurs.
@@ -5863,7 +5863,7 @@ As examples,
 \fB\e(br\ez\e(rn\e(ul\e(br\fR will produce the smallest possible
 constructed box \fB\(br\z\(rn\(ul\(br\fR\|.
 .pg
-The function \A'e_Z'\fB\eZ\fI'string'\fR
+The function \A'e_Z'\fB\eZ\'\fIstring\fP\'\fR
 prints \fIstring\fR in nofill mode
 and restores the horizontal and vertical position afterwards.
 .sc
@@ -6480,7 +6480,7 @@ as set by \T'hy'\fBhy\fR\T;
 the tab and leader repetition characters,
 as set by \T'tc'\fBtc\fR\T and \T'lc'\fBlc\fR\T, respectively;
 and the default line breaking penalty,
-as set by \T'e_J'\fB\eJ\fR\T.
+as set by\~\T'e_J'\fB\eJ\fR\T.
 The inline environment is pushed
 by \A'e_@'\fB\e@{\fR,
 meaning that the current values of these parameters are saved.
@@ -7307,14 +7307,14 @@ practical to include the command in the chapter/section macros:
 .ft B
 &de CH
 &	bp
-\ev\'\(or-1v-4p\'\e\eX\'PDFMark: Bookmark 0 \e\e$1\'
+\ev\(aq\(or-1v-4p\(aq\e\eX\(aqPDFMark: Bookmark 0 \e\e$1\(aq
 &	sp \(or\e\en[topmargin]u
 &	ce
 &	sp
 &.
 &de SH
 &	ce
-\e\e$1\ev\'-1v\'\e\eX\'PDFMark: Bookmark 1 \e\e$1\'
+\e\e$1\ev\(aq-1v\(aq\e\eX\(aqPDFMark: Bookmark 1 \e\e$1\(aq
 &	sp
 &.
 .ft R
@@ -8610,7 +8610,7 @@ Font Style Examples
 .vs 12p
 The following fonts are printed in 12-point, with a vertical spacing of 14-point,
 and with
-non-alphanumeric characters separated by \(14\|em space.
+non-alphanumeric characters separated by \(14-em space.
 Note that this table only includes
 the historical \s-1CAT\s+1 \*(TR character set;
 \*(PS devices can usually print a much larger,
