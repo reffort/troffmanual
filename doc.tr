@@ -122,7 +122,7 @@
 .flig BI 31
 ..
 .\" mo/dy/yr
-.ds Sccsdate 02/21/19
+.ds Sccsdate 02/22/19
 .ds Str \*[Sccsdate]
 .substring Str 0 0
 .if '\*[Str]'%' \{\
@@ -605,8 +605,8 @@ Form	Value\\$2	Argument	Notes\\$1	Explanation
 .	vpt \\n[Bvpt]
 ..
 .\" from file m0
-\X'SetBorderStyle: /S/U/W 0.1'
-\X'SetUBorderStyle: /S/U/W 0.1'
+\X'SetBorderStyle: /S/U/W 0.5'
+\X'SetUBorderStyle: /S/U/W 0.5'
 \X'PDFMark: Author Gunnar Ritter'
 \X,PDFMark: Title Nroff/Troff User's Manual,
 \X'PS: [ {Catalog} << /ViewerPreferences << /DisplayDocTitle true >> >> /PUT pdfmark'
@@ -7451,8 +7451,8 @@ Likewise,
 are available for URI links.  For this document the commands
 .x1
 .ft B
-\eX\(aqSetBorderStyle: /S/U/W 0.1\(aq
-\eX\(aqSetUBorderStyle: /S/U/W 0.1\(aq
+\eX\(aqSetBorderStyle: /S/U/W 0.5\(aq
+\eX\(aqSetUBorderStyle: /S/U/W 0.5\(aq
 .ft R
 .x2
 are used.
