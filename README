@@ -1,9 +1,17 @@
 doc.tr is the updated source file for the nroff/troff User's Manual,
 with the new paragraphing features and various corrections.
 
-troffdoc.pdf was built directly from the source file.
+troffdoc.pdf was built directly from the source file (February 22, 2019 version).
 
-troffdoc-mk.pdf is marked up to identify the lines that were changed
-in troffdoc.pdf.
+troffdoc-an.pdf is highlighted to show the differences between the
+February 22 and January 27 versions.
 
-changes.pdf provides a detailed description of the changes.
+troffdoc-20190127.pdf is the January 27, 2019 version.
+
+troffdoc-20190127-mk-an.pdf is the January 27 version with the changed lines
+flagged with gdiffmk.  Additionally, changes have been highlighted so they
+are easier to find.
+
+changes.pdf provides a detailed description of the document changes for the
+January 27 and February 22 versions.
+
