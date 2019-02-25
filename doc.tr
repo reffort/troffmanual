@@ -2154,7 +2154,7 @@ Reference	Sequence	Meaning
 2.1	\T'e_-'\fB\e\-\fR\T	\- Minus sign in the \fIcurrent\fR font
 12.4	\T'e__'\fB\e_\fR\T	\_ (underrule character); equivalent to \fB\e(ul\fR
 7	\T'e_.'\fB\e\^.\fR\T	Period (dot) (see \fBde\fR)
-4.1	\T'e_ '\fB\e\fR(space)\T	Unpaddable space-size space character
+4.1	\T'e_ '\fB\e\fIspace\fR\T	Unpaddable space-size space character
 4.1	\T'e_~'\fB\e\[asciitilde]\fR\T	Paddable no-break space character
 11.1	\T'e_0'\fB\e0\fR\T	Digit width space
 .tr ||
@@ -2231,7 +2231,7 @@ T}	Point-size change function
 12.2	\T'e_Z'\fB\eZ\fI\'string\'\fR\T	Print \fIstring\fR with zero width and height
 16	\T'e_{'\fB\e{\fR\T	Begin conditional input
 16	\T'e_}'\fB\e}\fR\T	End conditional input
-10.7	\T'e_newline'\fB\e\fR(newline)\T	Concealed (ignored) newline
+10.8	\T'e_newline'\fB\e\fInewline\fR\T	Concealed (ignored) newline
 \(en	\fB\e\fIc\fR	\fIc\fR, any character not listed above
 .TE
 .fi
@@ -4662,7 +4662,7 @@ The input is copied without interpretation
 \*+ Strings indicated by \T'e_*'\fB\e\(**\fR\T are interpolated.
 \*+ Arguments indicated by \T'e_$'\fB\e$\fR\T are interpolated.
 \*+ Environment variables indicated by \T'e_V'\fB\eV\fR\T are interpolated.
-\*+ Concealed newlines indicated by \T'e_newline'\fB\e\fR\T(newline) are eliminated.
+\*+ Concealed newlines indicated by \T'e_newline'\fB\e\fInewline\fR\T are eliminated.
 \*+ Comments indicated by \T'e_"'\fB\e"\fR\T or \T'e_#'\fB\e#\fR\T are eliminated.
 \*+ \T'e_t'\fB\et\fR\T and \T'e_a'\fB\ea\fR\T are interpreted as \s-1ASCII\s+1 horizontal tab and \s-1SOH\s+1 respectively \T's_tabs'(\(sc9).\T
 .ne 2
@@ -5717,7 +5717,7 @@ An uncomfortably long input line that must stay
 one line (e.g. a string definition, or nofilled text)
 can be split into many physical lines by ending all but
 the last one with the escape \fB\e\fR\~.
-The sequence \A'e_newline'\fB\e\fR(newline) is \fIalways\fR ignored\(em\
+The sequence \A'e_newline'\fB\e\fInewline\fR is \fIalways\fR ignored\(em\
 except in a comment.
 Comments may be embedded at the \fIend\fR of any line by
 prefacing them with \A'e_"'\fB\e"\fR.
